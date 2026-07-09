@@ -1,5 +1,29 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:"Outfit",sans-serif;
+  background-color: #f5f7fb;
+  color: #100f0f;
+}
+.header {
+  background-color: #5d84b3;
+  text-align: center;
+  color: white;
+  padding: 80px 20px;
+  margin-bottom: 60px;
+}
+.title {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.description {
+  max-width: 650px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #ececec;
 }
