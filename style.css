@@ -48,6 +48,7 @@ body {
   width: 90%;
   margin: auto;
   padding-bottom: 80px;
+  max-width: 1200px;
 }
 .services-title {
   text-align: center;
@@ -67,7 +68,9 @@ body {
   overflow: hidden;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 .service-card:hover {
   transform: scale(1.05);
@@ -75,21 +78,21 @@ body {
 }
 .service-image {
   width: 100%;
-  height: 280px;
+  height: 220px;
   object-fit: cover;
   border-radius: 15px;
   margin-bottom: 15px;
 }
 .service-title {
   font-size: 30px;
-  margin: 25px 0 15px;
+  margin: 15px 0 10px;
   color: var(--heading-color);
 }
 .service-card-description {
-  padding: 0 25px;
+  padding: 0 20px;
   color: var(--text-gray);
-  line-height: 1.7;
-  min-height: 90px;
+  line-height: 1.6;
+  min-height: 70px;
   font-size: 18px;
 }
 .service-button {
@@ -102,11 +105,17 @@ body {
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 .service-button:hover {
   background-color: var(--primary-hover);
   transform: scale(1.05);
+}
+.service-button:focus {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
 }
 .footer {
   background-color: var(--primary-color);
@@ -130,12 +139,17 @@ body {
     font-size: 18px;
   }
 
+  .services {
+    width: 92%;
+  }
+
   .services-title {
     font-size: 30px;
+    margin-bottom: 35px;
   }
 
   .service-image {
-    height: 240px;
+    height: 230px;
   }
 }
 
@@ -189,6 +203,7 @@ body {
     font-size: 16px;
     min-height: auto;
     padding: 0 10px;
+    line-height: 1.5;
   }
 
   .service-button {
